@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2022.1.21" %}
+{% set version = "2022.3.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt-dlp-{{ version }}.tar.gz
-  sha256: 220ec407389b5ea72e25dfc11c30e543489b90075c55311d5255e2045db8a9e2
+  sha256: 68546578c18e6ce87450b53769d5d5b7f5a23e5209784976db6c7ccbf7954b21
 
 build:
   number: 0
@@ -26,6 +26,8 @@ requirements:
     - pycryptodomex
     - python >=3.6
     - websockets
+    - brotli
+    - brotlicffi
 
 test:
   imports:
@@ -42,6 +44,7 @@ about:
   dev_url: https://github.com/yt-dlp/yt-dlp
   license: Unlicense
   license_file: LICENSE
+  description: yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
 
 extra:
   recipe-maintainers:
