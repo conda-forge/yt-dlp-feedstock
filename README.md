@@ -5,11 +5,13 @@ Home: https://github.com/yt-dlp/yt-dlp
 
 Package license: Unlicense
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yt-dlp-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yt-dlp-feedstock/blob/main/LICENSE.txt)
 
 Summary: A youtube-dl fork with additional features and patches
 
 Development: https://github.com/yt-dlp/yt-dlp
+
+yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
 
 Current build status
 ====================
@@ -17,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15325&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/yt-dlp-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15325&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/yt-dlp-feedstock?branchName=main">
       </a>
     </td>
   </tr>
