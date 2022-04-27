@@ -23,6 +23,7 @@ requirements:
     - python >=3.6
   run:
     - mutagen
+    - certifi
     - pycryptodomex
     - python >=3.6
     - websockets
