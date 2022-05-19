@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2022.5.18"" %}
+{% set version = "2022.5.18" %}
 
 package:
   name: {{ name|lower }}
