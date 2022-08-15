@@ -15,17 +15,17 @@ build:
   entry_points:
     - yt-dlp = yt_dlp:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - mutagen
     - certifi
     - pycryptodomex
-    - python >=3.6
+    - python >=3.7
     - websockets
     - brotli
     - brotlicffi
