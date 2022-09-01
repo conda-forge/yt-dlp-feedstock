@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2022.8.19" %}
+{% set version = "2022.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt-dlp-{{ version }}.tar.gz
-  sha256: cc290ac8a1fec626841765fed12f7a1ebdfe01791ae5c5f3794edfce35d81843
+  sha256: bc74ee255790043e458197aaf25c6c104fefc9fcda4458f652619447ab4ae0d7
 
 build:
   number: 0
@@ -15,7 +15,6 @@ build:
   entry_points:
     - yt-dlp = yt_dlp:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
 
 requirements:
   host:
