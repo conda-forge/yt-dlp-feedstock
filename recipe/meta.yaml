@@ -10,7 +10,7 @@ source:
   sha256: 1772a2e6f32b971b4d026deae3044f576b8052035255ca340f345cfe90d38d38
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yt-dlp = yt_dlp:main
@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - devscripts
   run:
     - mutagen
     - certifi
