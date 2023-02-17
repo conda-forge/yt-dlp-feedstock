@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2023.1.6" %}
+{% set version = "2023.2.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt-dlp-{{ version }}.tar.gz
-  sha256: 3a783a36751ced16368f40b3ba865ab39b30689ed8056f1ee2346aa3839a0b0f
+  sha256: 9af92de5effc193bdb51216d9ebf28874d96180d202fae752b0d9f2a63380f3a
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.7
     - devscripts
+    - pyinstaller
   run:
     - mutagen
     - certifi
@@ -38,6 +39,7 @@ test:
   commands:
     - pip check
     - yt-dlp --help
+    - yt-dlp --version
   requires:
     - pip
 
