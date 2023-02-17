@@ -39,6 +39,7 @@ test:
   commands:
     - pip check
     - yt-dlp --help
+    - yt-dlp --version
   requires:
     - pip
 
