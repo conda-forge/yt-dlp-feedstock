@@ -1,11 +1,11 @@
-About yt-dlp
-============
+About yt-dlp-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yt-dlp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yt-dlp/yt-dlp
 
 Package license: Unlicense
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yt-dlp-feedstock/blob/main/LICENSE.txt)
 
 Summary: A youtube-dl fork with additional features and patches
 
