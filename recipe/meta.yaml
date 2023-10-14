@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2022.4.8" %}
+{% set version = "2023.10.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,25 +7,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt-dlp-{{ version }}.tar.gz
-  sha256: 8758d016509d4574b90fbde975aa70adaef71ed5e7a195141588f6d6945205ba
+  sha256: e026ea1c435ff36eef1215bc4c5bb8c479938b90054997ba99f63a4541fe63b4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yt-dlp = yt_dlp:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools >50
+    - python >=3.7
+    - devscripts
+    - pyinstaller
   run:
     - mutagen
     - certifi
     - pycryptodomex
-    - python >=3.6
+    - python >=3.7
     - websockets
     - brotli
     - brotlicffi
@@ -34,9 +36,11 @@ requirements:
 test:
   imports:
     - yt_dlp
+    - yt_dlp.compat
   commands:
     - pip check
     - yt-dlp --help
+    - yt-dlp --version
   requires:
     - pip
 
