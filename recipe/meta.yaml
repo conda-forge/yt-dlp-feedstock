@@ -34,9 +34,10 @@ requirements:
     - brotli-python
     - requests >=2.31.0,<3
     - urllib3 >=1.26.17,<3
-    - secretstorage   # [unix]
-    - __unix  # [unix]
+    - secretstorage   # [linux]
+    - __linux  # [linux]
     - __osx    # [osx]
+    - __win    # [win]
 
 test:
   imports:
