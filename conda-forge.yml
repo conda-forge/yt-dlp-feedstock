@@ -1,4 +1,3 @@
-conda_forge_output_validation: true
 noarch_platforms:
 - linux_64
 - win_64
