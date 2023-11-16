@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2023.11.14" %}
+{% set version = "2023.11.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt-dlp-{{ version }}.tar.gz
-  sha256: b3c25353ba106922d870a5a59e4d6a2eb85783ebd17e29ec435bc3e1764de8be
+  sha256: f0ccdaf12e08b15902601a4671c7ab12906d7b11de3ae75fa6506811c24ec5da
 
 build:
   number: 0
@@ -34,8 +34,6 @@ requirements:
     - brotli-python
     - requests >=2.31.0,<3
     - urllib3 >=1.26.17,<3
-    - secretstorage   # [linux]
-
 test:
   imports:
     - yt_dlp
