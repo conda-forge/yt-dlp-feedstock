@@ -18,22 +18,21 @@ build:
 
 requirements:
   host:
-    - pip
+    - python >=3.7
     - setuptools >50
-    - python >=3.7
     - devscripts
-    - pyinstaller
+    - py2exe
+    - pip
   run:
-    - mutagen
-    - certifi
-    - pycryptodomex
     - python >=3.7
-    - websockets
+    - mutagen
+    - pycryptodomex
     - brotli
     - brotlicffi
-    - brotli-python
+    - certifi
     - requests >=2.31.0,<3
     - urllib3 >=1.26.17,<3
+    - websockets >=12.0
 
 test:
   imports:
