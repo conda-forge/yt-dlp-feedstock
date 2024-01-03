@@ -21,7 +21,6 @@ requirements:
     - python >=3.7
     - setuptools >50
     - devscripts
-    - py2exe
     - pip
   run:
     - python >=3.7
