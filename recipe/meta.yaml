@@ -18,17 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
-    - setuptools >50
-    - devscripts
+    - python >=3.8
+    - hatchling
     - pip
   run:
-    - python >=3.7
-    - mutagen
-    - pycryptodomex
+    - python >=3.8
     - brotli
     - brotlicffi
     - certifi
+    - mutagen
+    - pycryptodomex
     - requests >=2.31.0,<3
     - urllib3 >=1.26.17,<3
     - websockets >=12.0
