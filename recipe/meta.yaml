@@ -28,7 +28,7 @@ requirements:
     - certifi
     - mutagen
     - pycryptodomex
-    - requests >=2.31.0,<3
+    - requests <3,>=2.32.2
     - urllib3 >=1.26.17,<3
     - websockets >=12.0
 
