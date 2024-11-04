@@ -1,13 +1,13 @@
 {% set name = "yt-dlp" %}
-{% set version = "2024.10.22" %}
+{% set version = "2024.11.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 47b82a1fd22411b5c95ef2f0a1ae1af4e6dfd736ea99fdb2a0ea41445abc62ba
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ed204c1b61bc563e134447766d1ab343173540799e13ebb953e887ce7dcf6865
 
 build:
   number: 0
@@ -18,19 +18,19 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - hatchling
-    - pip
+  - python >=3.9
+  - hatchling
+  - pip
   run:
-    - python >=3.8
-    - brotli
-    - brotlicffi
-    - certifi
-    - mutagen
-    - pycryptodomex
-    - requests <3,>=2.32.2
-    - urllib3 >=1.26.17,<3
-    - websockets >=13.0
+  - brotli
+  - brotlicffi
+  - certifi
+  - mutagen
+  - pycryptodomex
+  - requests <3,>=2.32.2
+  - urllib3 >=1.26.17,<3
+  - websockets >=13.0
+  - python >=3.9
 
 test:
   imports:
