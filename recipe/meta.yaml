@@ -10,7 +10,7 @@ source:
   sha256: ed204c1b61bc563e134447766d1ab343173540799e13ebb953e887ce7dcf6865
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yt-dlp = yt_dlp:main
