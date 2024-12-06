@@ -14,14 +14,17 @@ build:
   noarch: python
   entry_points:
     - yt-dlp = yt_dlp:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python {{ python_min }}
     - hatchling
     - pip
+    - setuptools >=71.0.2
   run:
+    - python >={{ python_min }}
+  run_constrained:
     - brotli
     - brotlicffi
     - certifi
@@ -30,7 +33,6 @@ requirements:
     - requests <3,>=2.32.2
     - urllib3 >=1.26.17,<3
     - websockets >=13.0
-    - python >={{ python_min }}
 
 test:
   imports:
