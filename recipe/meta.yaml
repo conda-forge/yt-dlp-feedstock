@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2024.12.3" %}
+{% set version = "2024.12.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,24 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 35abff51c5762033103f2330ba0a8a1f48c4388a413a2d8cdc9b84642fe8edd4
+  sha256: 743dbe081ea871be3f5ff083e2cd95da866dea773fc70ae6b109838cfbf72ac4
 
 build:
   number: 0
   noarch: python
   entry_points:
     - yt-dlp = yt_dlp:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python {{ python_min }}
     - hatchling
     - pip
+    - setuptools >=71.0.2
   run:
+    - python >={{ python_min }}
+  run_constrained:
     - brotli
     - brotlicffi
     - certifi
@@ -30,7 +33,6 @@ requirements:
     - requests <3,>=2.32.2
     - urllib3 >=1.26.17,<3
     - websockets >=13.0
-    - python >={{ python_min }}
 
 test:
   imports:
