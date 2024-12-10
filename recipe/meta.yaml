@@ -10,7 +10,7 @@ source:
   sha256: 743dbe081ea871be3f5ff083e2cd95da866dea773fc70ae6b109838cfbf72ac4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yt-dlp = yt_dlp:main
@@ -52,7 +52,8 @@ about:
   dev_url: https://github.com/yt-dlp/yt-dlp
   license: Unlicense
   license_file: LICENSE
-  description: yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
+  description: |
+    yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
 
 extra:
   recipe-maintainers:
