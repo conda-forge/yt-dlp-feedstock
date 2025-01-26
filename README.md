@@ -11,7 +11,9 @@ Summary: A youtube-dl fork with additional features and patches
 
 Development: https://github.com/yt-dlp/yt-dlp
 
-yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
+Documentation: https://github.com/yt-dlp/yt-dlp/wiki
+
+yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project.
 
 
 Current build status
