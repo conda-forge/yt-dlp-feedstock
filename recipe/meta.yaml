@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
     - hatchling
     - pip
-    - setuptools >=71.0.2
+    - setuptools
   run:
     - python >={{ python_min }}
   run_constrained:
