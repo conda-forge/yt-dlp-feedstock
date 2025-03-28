@@ -1,5 +1,5 @@
 {% set name = "yt-dlp" %}
-{% set version = "2025.3.26" %}
+{% set version = "2025.3.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 47456172bc7a88dba1c519fe42d80087a8f530c03d2cbf24e060a41f8f1f6ecb
+  sha256: 30cb078f803b539b2a66521c5ec86d328c07f74aeca9440069e58619c299cf15
 
 build:
   number: 0
