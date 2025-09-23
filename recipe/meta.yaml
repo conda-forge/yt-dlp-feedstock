@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling
+    - hatchling >=1.27.0
     - pip
     - setuptools
   run:
