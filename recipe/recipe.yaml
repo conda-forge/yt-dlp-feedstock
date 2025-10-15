@@ -42,13 +42,12 @@ tests:
   - python:
       imports:
         - yt_dlp
-        - yt_dlp.compat
+      pip_check: true
   - requirements:
       run:
         - pip
         - python ${{ python_min }}*
     script:
-      - pip check
       - yt-dlp --help
       - yt-dlp --version
 
