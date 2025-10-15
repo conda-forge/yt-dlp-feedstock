@@ -13,7 +13,7 @@ source:
   sha256: b18436aa9bb6f04354fd78d31ad9eeaae8c81b6a859f07072b25c18cd6c25844
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -37,18 +37,20 @@ requirements:
     - requests <3,>=2.32.2
     - urllib3 >=2.0.2,<3
     - websockets >=13.0
+    - autopep8 >=2.0,<3.dev0
+    - ruff >=0.13.0,<0.14.dev0 
 
 tests:
   - python:
       imports:
         - yt_dlp
-        - yt_dlp.compat
+        - yt_dlp.compat 
+      pip_check: true
   - requirements:
       run:
         - pip
         - python ${{ python_min }}*
     script:
-      - pip check
       - yt-dlp --help
       - yt-dlp --version
 
