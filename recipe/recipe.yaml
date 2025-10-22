@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yt-dlp
-  version: "2025.10.14"
+  version: "2025.10.22"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: b18436aa9bb6f04354fd78d31ad9eeaae8c81b6a859f07072b25c18cd6c25844
+  sha256: db2d48133222b1d9508c6de757859c24b5cefb9568cf68ccad85dac20b07f77b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
