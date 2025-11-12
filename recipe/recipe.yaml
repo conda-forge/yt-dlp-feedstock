@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yt-dlp
-  version: "2025.10.22"
+  version: "2025.11.12"
 
 package:
   name: ${{ name|lower }}
