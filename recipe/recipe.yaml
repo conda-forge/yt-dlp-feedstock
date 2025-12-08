@@ -13,7 +13,7 @@ source:
   sha256: b773c81bb6b71cb2c111cfb859f453c7a71cf2ef44eff234ff155877184c3e4f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -28,6 +28,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
+    - yt-dlp-ejs ==0.3.2 #technically is an optional dependancies but as part of the "default" installation
   run_constraints:
     - brotli
     - brotlicffi
@@ -39,7 +40,6 @@ requirements:
     - websockets >=13.0
     - autopep8 >=2.0,<3.dev0
     - ruff >=0.13.0,<0.14.dev0
-    - yt-dlp-ejs ==0.3.2
 
 tests:
   - python:
