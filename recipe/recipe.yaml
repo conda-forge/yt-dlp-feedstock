@@ -39,6 +39,7 @@ requirements:
     - websockets >=13.0
     - autopep8 >=2.0,<3.dev0
     - ruff >=0.13.0,<0.14.dev0
+    - yt-dlp-ejs ==0.3.2
 
 tests:
   - python:
