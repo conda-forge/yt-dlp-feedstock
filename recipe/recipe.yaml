@@ -13,7 +13,7 @@ source:
   sha256: b773c81bb6b71cb2c111cfb859f453c7a71cf2ef44eff234ff155877184c3e4f
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -47,10 +47,7 @@ tests:
         - yt_dlp
         - yt_dlp.compat
       pip_check: true
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}*
+      python_version: ${{ python_min }}.*
     script:
       - yt-dlp --help
       - yt-dlp --version
