@@ -49,6 +49,8 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - requirements:
+      run:
+        - pip
     script:
       - yt-dlp --help
       - yt-dlp --version
