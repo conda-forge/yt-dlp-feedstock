@@ -48,7 +48,7 @@ tests:
         - yt_dlp.compat
       pip_check: true
       python_version: ${{ python_min }}.*
-    script:
+  - script:
       - yt-dlp --help
       - yt-dlp --version
 
