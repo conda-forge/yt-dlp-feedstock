@@ -28,7 +28,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - yt-dlp-ejs ==0.3.2 #technically is an optional dependancies but as part of the "default" installation
+    - yt-dlp-ejs ==0.4.0 #technically is an optional dependancies but as part of the "default" installation
   run_constraints:
     - brotli
     - brotlicffi
@@ -39,7 +39,8 @@ requirements:
     - urllib3 >=2.0.2,<3
     - websockets >=13.0
     - autopep8 >=2.0,<3.dev0
-    - ruff >=0.13.0,<0.14.dev0
+    - ruff >=0.14.0,<0.15.dev0
+    - deno >=2.6.6
 
 tests:
   - python:
