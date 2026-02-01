@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yt-dlp
-  version: "2026.1.29"
+  version: "2026.1.31"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 12b489eb16828cc3fff1723f244992ebae8a5bf1ad75c8e9f01d729ae237ebb9
+  sha256: 16767a3172cbb7183199f4db19e34b77b19e030ab7101b8f26d6c9e6af6f42ae
 
 build:
   number: 0
