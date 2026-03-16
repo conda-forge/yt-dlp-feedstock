@@ -27,7 +27,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - yt-dlp-ejs ==0.5.0 #technically is an optional dependancies but as part of the "default" installation
+    - yt-dlp-ejs ==0.7.0 #technically is an optional dependancies but as part of the "default" installation
   run_constraints:
     - brotli
     - brotlicffi
