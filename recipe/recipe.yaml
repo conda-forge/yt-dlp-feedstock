@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: yt-dlp
-  version: "2026.3.3"
+  version: "2026.3.13"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 3db7969e3a8964dc786bdebcffa2653f31123bf2a630f04a17bdafb7bbd39952
+  sha256: fb43659db684a3db6ff2f5c92e0f1641262f6ecc71dbb64fefe84177aaba9e36
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - yt-dlp-ejs ==0.5.0 #technically is an optional dependancies but as part of the "default" installation
+    - yt-dlp-ejs ==0.7.0 #technically is an optional dependancies but as part of the "default" installation
   run_constraints:
     - brotli
     - brotlicffi
